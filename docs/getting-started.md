@@ -1,9 +1,17 @@
 ---
 title: Getting Started
-nav_order: 2
+nav_order: 1
 ---
 
 To run OpenChessClub locally or self-host your own instance, you’ll need a few dependencies installed and a MongoDB connection string for your database.
+
+## Quick Deploy
+
+If you'd like to deploy the application immediately simply click the button below.
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/openchessclub/openchessclub)
+
+However, this will indeed deploy the application, but you will still need to run the [createUser.js](https://github.com/OpenChessClub/openchessclub/blob/main/scripts/createUser.js) script. So, it's best to fork the repository, clone it, run the script, and then deploy. This will at least skip the need for you to set up mongodb (render should provide you with a URI).
 
 ## Installations
 
@@ -36,3 +44,7 @@ After you've set your environment variables, the next step is to get the project
 ## Creating a user
 
 Since this software should only ever have 1 or 2 users, there's no need for a signup page. However, setting up a user account is incredibly easy. In the root of the project, you'll find a `scripts` folder. Therein, you'll find `createUser.js`. Simply run this script when you're ready to create your user account: `node createUser.js`. Follow the prompts, and that's it. You'll now have an admin account that you can now login with.
+
+## Seeding the database
+
+Coming soon.
